@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "uknow-api-indev",
+    "site": "uknow-api",
     "public": "public",
     "rewrites": [{
       "source": "**",
