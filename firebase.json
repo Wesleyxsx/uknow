@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "uknow-indev",
+    "site": "uknow",
     "public": "build",
     "ignore": [
       "firebase.json",
