@@ -7,3 +7,9 @@ body {
   /*font-family: 'Righteous', cursive;*/
   font-family: 'Zen Kurenaido', sans-serif;
 }
+
+.big__section {
+  background-color: rgb(204, 204, 238);
+  height: 80vh;
+  width: 100%;
+}

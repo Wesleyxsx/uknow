@@ -1,5 +1,6 @@
 //--------- Import styles ---------
 import './App.css';
+import Footer from './layout/footer/Footer';
 
 
 //---------- App ---------
@@ -11,8 +12,12 @@ import './App.css';
 export default function App() 
 {
   return (
-    <div>
-      Hello World!
-    </div>
+    <main>
+      <div className='big__section'>
+        Hello World!
+      </div>
+
+      <Footer />
+    </main>
   );
 }//end App()
