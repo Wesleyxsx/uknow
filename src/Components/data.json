@@ -1,0 +1,36 @@
+[
+    {
+      "title": "Movie Search app",
+      "link": "",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "react": "React",
+      "api": "Axios",
+      "gif": "https://media.giphy.com/media/YrSZQZTMsdT0qrOZOk/source.gif",
+      "description": "A movie search application using MovieDB's API that displays movie information, conver art, aswell as Related Searches and Trending Searches."
+    },
+    {
+      "title": "Movie Search app",
+      "link": "",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "react": "React",
+      "api": "Axios",
+      "gif": "https://media.giphy.com/media/YrSZQZTMsdT0qrOZOk/source.gif",
+      "description": "A movie search application using MovieDB's API that displays movie information, conver art, aswell as Related Searches and Trending Searches."
+    },
+    {
+      "title": "Movie Search app",
+      "link": "",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "react": "React",
+      "api": "Axios",
+      "gif": "https://media.giphy.com/media/YrSZQZTMsdT0qrOZOk/source.gif",
+      "description": "A movie search application using MovieDB's API that displays movie information, conver art, aswell as Related Searches and Trending Searches."
+    }
+  ]
+  

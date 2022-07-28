@@ -23,7 +23,7 @@ export default function Header ()
                         <span className="me-auto"/>
                         <Nav>
                             <Nav.Link href="#home" >Home</Nav.Link>
-                            <Nav.Link href="#cursos">Cursos</Nav.Link>
+                            <Nav.Link href="src/Components/cursos/index.js">Cursos</Nav.Link>
                             <Nav.Link href="#sobre">Sobre</Nav.Link>
                            <Button className='login' variant="warning">Sign in</Button>
                         </Nav>
