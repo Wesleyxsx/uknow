@@ -48,6 +48,10 @@ A estrutura de branches do projeto está organizada da seguinte forma:
     </tr>
     <tr>
         <td>#05</td>
+        <td>Alunos e professores podem comprar cursos.</td>
+    </tr>
+    <tr>
+        <td>#065</td>
         <td>Alunos e professores podem escolher qual o método de pagamento para a compra de cursos.</td>
     </tr>
 </table>
