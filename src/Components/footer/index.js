@@ -1,5 +1,5 @@
 //--------- Import styles ---------
-import './Footer.css';
+import './index.css';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
