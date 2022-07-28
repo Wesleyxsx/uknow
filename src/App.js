@@ -5,6 +5,7 @@ import Footer from "./Components/footer/index";
 
 //--------- Import styles ---------
 import './App.css';
+import Main from "./Components/main";
 
 
 //---------- App ---------
@@ -16,9 +17,10 @@ import './App.css';
 export default function App() 
 {
   return (
-    <div>
-      <Header></Header>
-      <Footer></Footer>
-    </div>
+      <div>
+        <Header></Header>
+        <Main />
+        <Footer />
+      </div>
   );
 }//end App()
