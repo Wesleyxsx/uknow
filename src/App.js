@@ -1,6 +1,10 @@
+//--------- Import custom components ---------
+import Header from "./Components/header/index";
+
+
 //--------- Import styles ---------
 import './App.css';
-import Footer from './layout/footer/Footer';
+import Footer from "./Components/footer/Footer";
 
 
 //---------- App ---------
@@ -12,12 +16,11 @@ import Footer from './layout/footer/Footer';
 export default function App() 
 {
   return (
-    <main>
-      <div className='big__section'>
-        Hello World!
+      <div>
+        <Header></Header>
+        <main className="big__section">
+        </main>
+        <Footer />
       </div>
-
-      <Footer />
-    </main>
   );
 }//end App()
