@@ -8,6 +8,7 @@ UKnow é uma plataforma de E-Learning
 2. [Levantamento de Requisitos](#levantamento-de-requisitos)
     1. [Requisitos Funcionais](#requisitos-funcionais)
     2. [Requisitos Não-Funcionais](#requisitos-não-funcionais)
+3. [Arquitetura do Projeto](#arquitetura-do-projeto)
 
 ## Branches
 
@@ -72,7 +73,7 @@ A estrutura de branches do projeto está organizada da seguinte forma:
     </tr>
     <tr>
         <td>#04</td>
-        <td>Firebase - Hosting e Firestore Database (NoSQL)</td>
+        <td>Firebase - Hosting, Functions e Firestore Database (NoSQL)</td>
     </tr>
 </table>
 
