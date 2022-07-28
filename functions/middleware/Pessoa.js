@@ -15,17 +15,17 @@ class Pessoa
      * @param {String} nome 
      * @param {Number} idade 
      * @param {String} cpf 
-     * @param {String} senha 
      * @param {String} email 
+     * @param {String} senha 
      */
-    constructor(id, nome, idade, cpf, senha, email)
+    constructor(id, nome, idade, cpf, email, senha)
     {
         this.#id = id;
         this.#nome = nome;
         this.#idade = idade;
         this.#cpf = cpf;
-        this.#senha = senha;
         this.#email = email;
+        this.#senha = senha;
     }//end constructor()
 
 

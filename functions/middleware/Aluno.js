@@ -18,9 +18,9 @@ class Aluno extends Pessoa
      * @param {String} email 
      * @param {Carteira} carteira
      */
-    constructor(id, nome, idade, cpf, senha, email, carteira)
+    constructor(id, nome, idade, cpf, email, senha, carteira)
     {
-        super(id, nome, idade, cpf, senha, email);
+        super(id, nome, idade, cpf, email, senha);
 
         this.#carteira = carteira;
     }//end constructor()
@@ -41,6 +41,25 @@ class Aluno extends Pessoa
      */
     setCarteira(carteira)
     { this.#carteira = carteira; }
+
+    //---------- functions -----------
+    /**
+     * Mostra as informações do aluno
+     * 
+     * @returns {Object}
+     */
+    mostrar()
+    {
+        return({
+            "id": this.getId(),
+            "nome": this.getNome(),
+            "idade": this.getIdade(),
+            "cpf": this.getCpf(),
+            "email": this.getEmail(),
+            "senha": this.getSenha(),
+            "carteira": this.getCarteira()
+        });
+    }//end mostrar()
 }//end class
 
 
