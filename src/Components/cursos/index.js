@@ -16,10 +16,10 @@ function ListaDeCursos() {
                 
                 <SearchBar/>
 
-                <Container fluid >
+                <Container fluid className='cursos'>
                     <Row>
-                        <Col><Carta img={marcenaria} /></Col>
-                        <Col><Carta img={moda} /></Col>
+                        <Col><Carta titulo='Curso de Macenaria' img={marcenaria} /></Col>
+                        <Col><Carta titulo='Curso de Moda' img={moda} /></Col>
                         <Col><Carta titulo='Curso de nodejs' img='public\Marcenaria.jpg' /></Col>
                         <Col><Carta /></Col>
                     </Row>
