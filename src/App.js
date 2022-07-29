@@ -1,6 +1,11 @@
+//--------- Import custom components ---------
+import Header from "./Components/header/index";
+import Footer from "./Components/footer/index";
+
+
 //--------- Import styles ---------
 import './App.css';
-
+import Main from "./Components/main";
 
 //---------- App ---------
 /**
@@ -11,8 +16,10 @@ import './App.css';
 export default function App() 
 {
   return (
-    <div>
-      Hello World!
-    </div>
+      <>
+        <Header></Header>
+        <Main />
+        <Footer />
+      </>
   );
 }//end App()
