@@ -34,7 +34,7 @@ export default function Header()
                     <Navbar.Collapse id="basic-navbar-nav">
                         <span className="me-auto"/>
                         <Nav>
-                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="#home" >Home</Nav.Link>
                             <Nav.Link href="#sobre">Sobre</Nav.Link>
                             <Nav.Link href="#gamificacao">Gamificação</Nav.Link>
                             <Nav.Link href="#democratizacao">A Democratização</Nav.Link>
