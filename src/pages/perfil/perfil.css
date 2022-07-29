@@ -1,3 +1,13 @@
+header .logo {
+    width: 1.5em;
+    filter: drop-shadow(-20px 0px 2px #222);
+    margin-right: 1em;
+}
+
+.nav--component {
+    background-color: #090446;
+}
+
 .profile{
     background: #e1efe6;
 }

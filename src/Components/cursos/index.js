@@ -1,29 +1,25 @@
 import { Col, Container, Row, InputGroup, FormControl, Button } from 'react-bootstrap'
 import Carta from './cards';
-import Header from '../header';
+import Header from '../header/index';
 import Footer from '../footer';
 import './index.css';
+import SearchBar from './searchBar';
+import marcenaria from './imagens/Marcenaria.jpg'
+import moda from './imagens/Moda.jpg'
+
 
 function ListaDeCursos() {
     return (
         <main>
             <Header />
             <section className='body'>
-                <h1>Cursos</h1>
-                <div className="SearchBar" >
-                    <InputGroup >
-                        <FormControl
-                            placeholder="Search"
-                        />
-                        <Button variant="outline-secondary" >
-                            Search
-                        </Button>
-                    </InputGroup>
-                </div>
+                
+                <SearchBar/>
+
                 <Container fluid className='cursos'>
                     <Row>
-                        <Col><Carta img='public/Marcenaria.jpg' /></Col>
-                        <Col><Carta img='public\Marcenaria.jpg' /></Col>
+                        <Col><Carta titulo='Curso de Macenaria' img={marcenaria} /></Col>
+                        <Col><Carta titulo='Curso de Moda' img={moda} /></Col>
                         <Col><Carta titulo='Curso de nodejs' img='public\Marcenaria.jpg' /></Col>
                         <Col><Carta /></Col>
                     </Row>
@@ -42,7 +38,7 @@ function ListaDeCursos() {
                 </Container>
             </section>
             <Footer />
-            </main>
+        </main>
     );
 }
 
