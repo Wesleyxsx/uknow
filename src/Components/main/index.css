@@ -12,8 +12,10 @@ main .texto__container p{
     font-size: large;
 }
 
+
+
 main .first__section {
-    background-color: rgb(2, 63, 112);    
+    background-color: #efcb68;    
 }
 main .first__section img {
     width: 80%;
@@ -26,17 +28,14 @@ main .first__section .texto__container {
     justify-content: center;
 }
 main .first__section .texto {
-    color: white;
+    color: #000000;
     text-align: center;
 }
 
 
 
-
-
-
 main .second__section {
-    background-color: #090446;
+    background-color: #e1efe6;
 }
 
 main .second__section img {
@@ -49,12 +48,9 @@ main .second__section .texto__container {
     justify-content: center;
 }
 main .second__section .texto {
-    color: white;
+    color: #000000;
     text-align: center;
 }
-
-
-
 
 
 
@@ -64,19 +60,37 @@ main .third__section {
 main .third__section img {
     width: 80%;    
     box-shadow: 8px 10px 5px #0e0a42;
+    background-color: #aeb7b3;
 }
+
 main .third__section .texto__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 main .third__section .texto {
-    color: white;
+    color: #000000;
     text-align: center;
 }
 
 
 
+main .fourth__section {
+    background-color: #efcb68;
+}
+
+main .fourth__section img {
+    width: 70%;
+}
+main .fourth__section .texto__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .fourth__section .texto {
+    color: #000000;
+    text-align: center;
+}
 
 
 
@@ -84,4 +98,8 @@ main .third__section .texto {
     main .hide__on__mobile {
         display: none;
     }    
+}
+
+.emptySpace {
+    margin-bottom: 5vh;
 }
