@@ -22,13 +22,13 @@ a{
     font-weight: bold !important;
 }
 
-.Brand{
+.brand{
     display: flex;
     align-items: center;
     font-size: 36px !important;
 }
 
-.login{
+.buttonlogin{
     background-color: #efcb68;
     color: #090446;
     font-size: 20px;
@@ -37,4 +37,14 @@ a{
 
 .login:hover{
     background-color: #aeb7b3;
+}
+
+.textButton{
+    color: #090446;
+    text-decoration: none;
+    text-shadow: 
+               -1px -1px 0px #aeb7b3, 
+               -1px 1px 0px #aeb7b3,                    
+                1px -1px 0px #aeb7b3,                  
+                1px 0px 0px #aeb7b3;
 }
