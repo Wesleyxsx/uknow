@@ -1,41 +1,49 @@
-//--------- Import custom components ---------
+//---------- Import libs ---------
 import React from 'react';
+
+
+//---------- Import Styles ---------
+import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 
-//--------- Import styles ---------
-import 'bootstrap/dist/css/bootstrap.css';
+
+//---------- Import Custom Styles ---------
 import './index.css';
 
-//--------- Function ---------
+
+//---------- Components ----------
 /**
+ * Header Component
  * 
  * @returns {JSX}
  */
-export default function Header ()
+export default function Header()
 {
     return(
         <header>
-            <Navbar variant='dark' expand="lg">
+            <Navbar className="nav--component" variant="dark" fixed="top" expand="lg">
                 <Container>
-                    <Navbar.Brand className="brand" href="#home">
-                        <img className="d-inline-block align-top" src='Logoamarelo.png' alt='Logo-amarelo'/>
-                        {" "}Uknow
+                    <Navbar.Brand href="/">
+                        <img className="logo d-inline-block align-top" src='Logoamarelo.png' alt='Logo-amarelo'/>
+                        {" "}Yknow
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <span className="me-auto"/>
-                        <Nav>   
-                            <Nav.Link href="#home" >Home</Nav.Link>
-                            <Nav.Link href="#cursos">Cursos</Nav.Link>
+                        <Nav>
+                            <Nav.Link href="/" >Home</Nav.Link>
                             <Nav.Link href="#sobre">Sobre</Nav.Link>
-                            <Button className='buttonlogin me-2' variant="warning"><a className='textButton' href='#login'>Sign in</a></Button>
+                            <Nav.Link href="#gamificacao">Gamificação</Nav.Link>
+                            <Nav.Link href="#democratizacao">A Democratização</Nav.Link>
+                            <Nav.Link href="#knowtoken">KnowToken</Nav.Link>
                         </Nav>
+                        <Button type="button" variant="warning">Sign in</Button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>
     );
-}
+}//end Header()

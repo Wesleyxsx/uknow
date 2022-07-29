@@ -7,7 +7,7 @@ import Perfil from "./pages/perfil/perfil";
 
 //--------- Import styles ---------
 import './App.css';
-
+import Main from "./Components/main";
 
 //---------- App ---------
 /**
@@ -18,10 +18,11 @@ import './App.css';
 export default function App() 
 {
   return (
-    <div>
-      <Header></Header>
-      <Perfil></Perfil>
-      <Footer></Footer>
-    </div>
+      <>
+        <Header></Header>
+        <Perfil></Perfil>
+        <Main />
+        <Footer />
+      </>
   );
 }//end App()

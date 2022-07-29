@@ -1,0 +1,19 @@
+.body{
+    width: 100%;
+    
+}
+h1{
+    margin: auto;
+}
+.SearchBar{
+    width: 80%;
+    margin: auto;
+}
+.cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    margin: 40px;
+}
+
+
