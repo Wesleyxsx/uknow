@@ -1,6 +1,6 @@
 import { Col, Container, Row, InputGroup, FormControl, Button } from 'react-bootstrap'
 import Carta from './cards';
-import Header from '../header';
+import Header from '../header/index';
 import Footer from '../footer';
 import './index.css';
 import SearchBar from './searchBar';
