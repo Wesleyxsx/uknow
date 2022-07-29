@@ -1,3 +1,13 @@
+.big__section {
+    background-color:#E1EFE6;
+    height: 80vh;
+    width: 100%;
+}
+
+
+
+
+
 main .texto__container p{
     font-size: large;
 }
@@ -45,12 +55,14 @@ main .second__section .texto {
 
 
 main .third__section {
-    background-color: #aeb7b3;
+    background-color: #EFCB68;
 }
 main .third__section img {
     width: 80%;    
-    box-shadow: 8px 10px 5px #04011d;
+    box-shadow: 8px 10px 5px #0e0a42;
+    background-color: #aeb7b3;
 }
+
 main .third__section .texto__container {
     display: flex;
     flex-direction: column;
