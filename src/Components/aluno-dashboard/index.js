@@ -12,6 +12,7 @@ import './index.css';
 
 import { FaUserCircle } from 'react-icons/fa'; 
 import { BsFillCaretDownFill } from 'react-icons/bs'; 
+import { AiOutlineBell } from 'react-icons/ai'; 
 
  
 
@@ -53,6 +54,8 @@ export default function AlunoDashboard() {
                 </div>
 
                 <div id='header__item__03' className='header__flex__item'>
+                    <span>00.00 tK</span>
+                    <div id='notif__bell'><AiOutlineBell />&nbsp;&nbsp;&nbsp;|</div>
                 </div>
 
                 <div id='header__item__04' className='header__flex__item'>
@@ -101,12 +104,14 @@ export default function AlunoDashboard() {
                         <h3>Cursos adquiridos</h3>
                         <hr />
                         <div className='card__group'>
+
                             <div className='my__card'>
                                 <img src={pic01} alt='curso' />
                             </div>
                             <div className='my__card'>
                                 <img src={pic02} alt='curso' />
                             </div>                            
+                            
                         </div>
                     </Container>
                 </section>
