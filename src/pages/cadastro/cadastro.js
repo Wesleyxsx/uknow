@@ -20,15 +20,11 @@ export default function Cadastro ()
                     <Form.Group className="mb-3" controlId="formBasicText">
                         <Form.Label>Nome Completo</Form.Label>
                         <Form.Control className='forms' type="text" placeholder="Nome Completo"/>
-                        <Form.Text className="text-muted">
-                        </Form.Text>
                     </Form.Group>
                     
                     <Form.Group className="mb-3" controlId="formBasicText">
                         <Form.Label>Data de Nascimento</Form.Label>
                         <Form.Control className='forms' type="date" placeholder="Data de Nascimento"/>
-                        <Form.Text className="text-muted">
-                        </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicText">
@@ -46,11 +42,11 @@ export default function Cadastro ()
                         <Form.Control className='forms' type="email" placeholder="Confirmar Endereço de Email"/>
                     <Form.Text className="text-muted">
                         Nunca compartilharemos seu e-mail com mais ninguém.
-                        </Form.Text>
+                    </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label> Senha</Form.Label>
+                        <Form.Label>Senha</Form.Label>
                         <Form.Control className='forms' type="password" placeholder=" Senha"/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">

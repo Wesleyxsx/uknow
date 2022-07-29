@@ -21,7 +21,6 @@ export default function App()
       <>
         <Header></Header>
         <Perfil></Perfil>
-        <Main />
         <Footer />
       </>
   );
