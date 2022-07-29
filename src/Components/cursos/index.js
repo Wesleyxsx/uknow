@@ -4,6 +4,9 @@ import Header from '../header/index';
 import Footer from '../footer';
 import './index.css';
 import SearchBar from './searchBar';
+import marcenaria from './imagens/Marcenaria.jpg'
+import moda from './imagens/Moda.jpg'
+
 
 function ListaDeCursos() {
     return (
@@ -13,10 +16,10 @@ function ListaDeCursos() {
                 
                 <SearchBar/>
 
-                <Container fluid className='cursos'>
+                <Container fluid >
                     <Row>
-                        <Col><Carta img='public/Marcenaria.jpg' /></Col>
-                        <Col><Carta img='public\Marcenaria.jpg' /></Col>
+                        <Col><Carta img={marcenaria} /></Col>
+                        <Col><Carta img={moda} /></Col>
                         <Col><Carta titulo='Curso de nodejs' img='public\Marcenaria.jpg' /></Col>
                         <Col><Carta /></Col>
                     </Row>
