@@ -17,7 +17,7 @@ export default function App()
 {
   return (
       <>
-        <Header></Header>
+        <Header />
         <Main />
         <Footer />
       </>
