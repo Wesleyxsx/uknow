@@ -1,5 +1,4 @@
 //---------- Imports ---------
-const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
 
 
@@ -17,12 +16,10 @@ const Aluno = require("../../middleware/Aluno");
  */
 async function CheckLogin({ email, senha })
 {
-    const answer = { "status": 500 };
+    const answer = { };
 
     try
     {
-        initializeApp();
-
         const db = getFirestore();
         const alunosRef = db.collection("aluno");
         const snapshot = await alunosRef.where("email", "==", email).where("senha", "==", senha).get();
@@ -54,10 +51,12 @@ async function CheckLogin({ email, senha })
     }
     catch(e)
     {
+        answer.status = 500;
         answer.error = true;
+        answer.message = "Internal Error!"
         answer.log = e;
 
-        throw answer;
+        return(answer);
     }//end try/catch
 }//end CheckLogin()
 
