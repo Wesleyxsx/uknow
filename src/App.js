@@ -4,6 +4,8 @@ import Footer from "./Components/footer/index";
 import Loginpage from "./pages/login/login";
 import Cadastro from "./pages/cadastro/cadastro";
 import Perfil from "./pages/perfil/perfil";
+import Videopage from "./pages/video-aula/video-aula";
+import Headerusuario from "./Components/header-usuario/header-usuario";
 
 //--------- Import styles ---------
 import './App.css';
@@ -19,8 +21,8 @@ export default function App()
 {
   return (
       <>
-        <Header></Header>
-        <Perfil></Perfil>
+        <Headerusuario></Headerusuario>
+        <Videopage></Videopage>
         <Footer />
       </>
   );
