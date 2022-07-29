@@ -1,5 +1,5 @@
 .big__section {
-    background-color: rgb(204, 204, 238);
+    background-color:#E1EFE6;
     height: 80vh;
     width: 100%;
 }
@@ -59,11 +59,11 @@ main .second__section .texto {
 
 
 main .third__section {
-    background-color: green;
+    background-color: #EFCB68;
 }
 main .third__section img {
     width: 80%;    
-    box-shadow: 8px 10px 5px #07460a;
+    box-shadow: 8px 10px 5px #0e0a42;
 }
 main .third__section .texto__container {
     display: flex;

@@ -3,23 +3,16 @@ import Carta from './cards';
 import Header from '../header';
 import Footer from '../footer';
 import './index.css';
+import SearchBar from './searchBar';
 
 function ListaDeCursos() {
     return (
         <main>
             <Header />
             <section className='body'>
-                <h1>Cursos</h1>
-                <div className="SearchBar" >
-                    <InputGroup >
-                        <FormControl
-                            placeholder="Search"
-                        />
-                        <Button variant="outline-secondary" >
-                            Search
-                        </Button>
-                    </InputGroup>
-                </div>
+                
+                <SearchBar/>
+
                 <Container fluid className='cursos'>
                     <Row>
                         <Col><Carta img='public/Marcenaria.jpg' /></Col>
@@ -42,7 +35,7 @@ function ListaDeCursos() {
                 </Container>
             </section>
             <Footer />
-            </main>
+        </main>
     );
 }
 

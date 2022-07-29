@@ -5,11 +5,13 @@ import Card from 'react-bootstrap/Card';
 function Carta(props) {
     
 const CardStyle = {
-    border: "1px solid black",
+    border: "1px solid #",
+    boxShadow: "4px 4px 4px #1e3f2996", 
     padding: "20px",
     margin: "10px",
     width: '16rem',
     height: "40vh",
+    backgroundColor: "#E1EFE6"
     
   };
   const ButtonStyle = {

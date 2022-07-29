@@ -20,6 +20,7 @@ export default function App()
       <div>
         <Header></Header>
         <Main />
+        
         <Footer />
       </div>
   );

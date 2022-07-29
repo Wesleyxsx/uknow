@@ -1,9 +1,12 @@
 .body{
     width: 100%;
+    margin-top: 40px,
     
 }
-h1{
-    margin: auto;
+.titulo{
+    margin-top: 20px;
+    position: relative;
+    
 }
 .SearchBar{
     width: 80%;
