@@ -1,42 +1,50 @@
-import { Col, Container, Row, InputGroup, FormControl, Button } from 'react-bootstrap'
-import Carta from './cards';
-import Header from '../header/index';
-import Footer from '../footer';
+//----------- Import libs ----------
+import axios from "axios";
+import React, { useState, useEffect } from "react";
+
+
+//----------- Import Styles ---------
+import { 
+    Col, Row, Button
+} from 'react-bootstrap';
+
+
+//----------- Import Custom Styles ---------
+import Cards from './cards';
 import './index.css';
-import SearchBar from './searchBar';
 
-function ListaDeCursos() {
+
+//----------- Component ------------
+/**
+ * Component Cursos
+ * 
+ * @returns {JSX}
+ */
+export default function ListaDeCursos()
+{
+    const [cursos, setCursos] = useState([]);
+
+    const ourCursos = async () => {
+        const res = await axios.get("https://uknow-api.web.app/getcursos");
+        setCursos(res.data.cursos);
+    };
+
+    useEffect(() => {
+        ourCursos();
+    }, []);
+
     return (
-        <main>
-            <Header />
-            <section className='body'>
-                
-                <SearchBar/>
-
-                <Container fluid className='cursos'>
-                    <Row>
-                        <Col><Carta img='public/Marcenaria.jpg' /></Col>
-                        <Col><Carta img='public\Marcenaria.jpg' /></Col>
-                        <Col><Carta titulo='Curso de nodejs' img='public\Marcenaria.jpg' /></Col>
-                        <Col><Carta /></Col>
-                    </Row>
-                    <Row>
-                        <Col><Carta /></Col>
-                        <Col><Carta /></Col>
-                        <Col><Carta /></Col>
-                        <Col><Carta /></Col>
-                    </Row>
-                    <Row>
-                        <Col><Carta /></Col>
-                        <Col><Carta /></Col>
-                        <Col><Carta /></Col>
-                        <Col><Carta /></Col>
-                    </Row>
-                </Container>
-            </section>
-            <Footer />
-        </main>
+        <>
+            <h1>Veja um pouco de nossos cursos</h1>
+            <Row lg={3} md={2} sm={1}>
+                {cursos.map((element) => {
+                    return(
+                        <Col style={{ display: "flex", justifyContent: "center"}}>
+                            <Cards curso={element} />
+                        </Col> 
+                    );
+                })}
+            </Row>
+        </>
     );
-}
-
-export default ListaDeCursos;
+}//end ListaDeCursos()
