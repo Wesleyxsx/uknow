@@ -95,28 +95,16 @@
     border-left: 0px solid white;    
 }
 
+.second__row img {
+    width: 9rem;
+}
+
+.second__row span {
+    margin: 1em 1em;
+}
+
 @media screen and (max-width: 768px) {
     .second__row {
         text-align: center;
-    }
-}
-
-
-
-
-.third__row {
-    padding-top: 32px;    
-}
-
-.third__row img {
-    width: 100px;    
-}
-
-@media screen and (max-width: 768px) {
-    .third__row {
-        text-align: center;
-    }    
-    .third__row img {
-        padding-top: 32px;
     }
 }
