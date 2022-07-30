@@ -39,7 +39,7 @@ export default function ListaDeCursos()
             <Row lg={3} md={2} sm={1}>
                 {cursos.map((element) => {
                     return(
-                        <Col style={{ display: "flex", justifyContent: "center"}}>
+                        <Col style={{ display: "flex", justifyContent: "center", margin: "0", padding: "0"}}>
                             <Cards curso={element} />
                         </Col> 
                     );

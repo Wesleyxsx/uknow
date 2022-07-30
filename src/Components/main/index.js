@@ -139,7 +139,9 @@ export default function Main()
       <section id="cursos" className='fifth__section'>
         <br />
         <br />
-        <Cursos />        
+        <Container>
+          <Cursos />
+        </Container>      
         <br />        
         <br />        
       </section>        

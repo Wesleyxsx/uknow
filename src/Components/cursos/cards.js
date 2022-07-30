@@ -1,7 +1,7 @@
 //----------- Import Custom Styles ---------
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../cursos/cards.css'
 
 //----------- Component ---------
 /**
@@ -34,4 +34,4 @@ export default function Cards(props)
       </Card.Body>
     </Card>
   );
-}//end Cards
+}//end Cards()

@@ -7,7 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage";
 import Loginpage from "./pages/login/login";
 import Cadastro from "./pages/cadastro/cadastro";
-import Cursos from "./Components/cursos";
+import AlunoDashboard from "./Components/aluno-dashboard";
+import Perfil from "./pages/perfil/perfil";
+import Videopage from "./pages/video-aula/video-aula";
 
 
 //--------- Import styles ---------
@@ -27,6 +29,9 @@ export default function App()
       <Route element={<Homepage />} path="/" exact />
       <Route element={<Loginpage />} path="/login" />
       <Route element={<Cadastro />} path="/cadastro" />
+      <Route element={<AlunoDashboard />} path="/dashboard" />
+      <Route element={<Perfil />} path="/perfilUsuario" />
+      <Route element={<Videopage />} path="/videoAula" />
     </Routes>
   );
 }//end App()

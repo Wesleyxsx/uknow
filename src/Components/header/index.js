@@ -28,7 +28,7 @@ export default function Header()
                 <Container>
                     <Navbar.Brand href="/">
                         <img className="logo d-inline-block align-top" src='Logoamarelo.png' alt='Logo-amarelo'/>
-                        {" "}Yknow
+                        {" "}Uknow
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

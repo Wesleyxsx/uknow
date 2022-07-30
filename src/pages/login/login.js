@@ -1,6 +1,7 @@
 //--------- Import libs ---------
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router";
 
 
 //--------- Import Styles ---------
@@ -23,13 +24,26 @@ import './login.css'
  */
 export default function Loginpage()
 {
+    const navigate = useNavigate();
+
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
 
 
     const checklogin = async () => {
-        const res = await axios.get(`https://uknow-api.web.app/email/${email}/senha/${senha}`);
-        console.log(res);
+        if(email === "" || email === null || senha === "" || senha === null)
+        { alert("Preencha os campos!"); }
+        else
+        {
+            axios.get(`https://uknow-api.web.app/email/${email}/senha/${senha}`)
+            .then((res) => {
+                sessionStorage.setItem("userInfo", JSON.stringify(res.data.usuario));
+                navigate("/dashboard");  
+            })
+            .catch((e) => {
+                alert("Email e senhas incorretos!");      
+            });
+        }//end if
     };
 
     return(
@@ -39,7 +53,7 @@ export default function Loginpage()
                     <Container>
                         <Navbar.Brand href="/">
                             <img className="logo d-inline-block align-top" src='Logoamarelo.png' alt='Logo-amarelo'/>
-                            {" "}Yknow
+                            {" "}Uknow
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">

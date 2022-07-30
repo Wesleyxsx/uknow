@@ -65,7 +65,7 @@ export default function Cadastro()
                     <Container>
                         <Navbar.Brand href="/">
                             <img className="logo d-inline-block align-top" src='Logoamarelo.png' alt='Logo-amarelo'/>
-                            {" "}Yknow
+                            {" "}Uknow
                         </Navbar.Brand>
                     </Container>
                 </Navbar>
