@@ -24,11 +24,7 @@ import './perfil.css';
  */
 export default function Perfil ()
 {
-    const userInfo = useRef({});
-
-    useEffect(() => {
-        userInfo.current = JSON.parse(sessionStorage.getItem("userInfo"));
-    }, [])
+    const userInfo = useRef(JSON.parse(sessionStorage.getItem("userInfo")));
 
     return(
         <body>

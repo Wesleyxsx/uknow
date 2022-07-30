@@ -34,6 +34,11 @@ export default function AlunoDashboard()
         setCursos(res.data.cursos);
     };
 
+    const toPerfil = () => {
+        sessionStorage.setItem("userInfo", JSON.stringify(userInfo.current));
+        navigate("/perfilUsuario");
+    };
+
     useEffect(() => {
         ourCursos();
         userInfo.current = JSON.parse(sessionStorage.getItem("userInfo"));
@@ -41,6 +46,7 @@ export default function AlunoDashboard()
 
     function handleLogoClick(e) {
         e.preventDefault();
+
         window.location.href='/dashboard';
     }
 
@@ -76,7 +82,7 @@ export default function AlunoDashboard()
 
                         <Dropdown.Menu>
                             <Dropdown.Item href="/dashboard">Meu Dashboard</Dropdown.Item>
-                            <Dropdown.Item href="/perfilUsuario">Meu Perfil</Dropdown.Item>
+                            <Dropdown.Item onClick={() => toPerfil()}>Meu Perfil</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>                    
                 </div>
