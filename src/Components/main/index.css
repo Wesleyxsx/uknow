@@ -1,3 +1,13 @@
+.big__section {
+    background-color:#E1EFE6;
+    height: 80vh;
+    width: 100%;
+}
+
+
+
+
+
 main .texto__container p{
     font-size: large;
 }
@@ -49,8 +59,10 @@ main .third__section {
 }
 main .third__section img {
     width: 80%;    
-    box-shadow: 8px 10px 5px #04011d;
+    box-shadow: 8px 10px 5px #0e0a42;
+    background-color: #aeb7b3;
 }
+
 main .third__section .texto__container {
     display: flex;
     flex-direction: column;
@@ -80,12 +92,19 @@ main .fourth__section .texto {
     text-align: center;
 }
 
+main .fifth__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 576px) {
     main .hide__on__mobile {
         display: none;
-    }    
+    }
 }
 
 .emptySpace {

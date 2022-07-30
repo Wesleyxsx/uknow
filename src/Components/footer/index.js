@@ -1,4 +1,4 @@
-///--------- Import libs ---------
+//--------- Import libs ---------
 import React, { useState } from "react";
 
 
@@ -21,7 +21,7 @@ import './index.css';
 
 //---------- Footer ---------
 /**
- * App Footer
+ * Component Footer
  * 
  * @returns {JSX}
  */
@@ -62,8 +62,9 @@ export default function Footer()
                             <li><a href='/'>Home</a></li>
                             <li><a href='#sobre'>Sobre</a></li>
                             <li><a href='#gamificacao'>Gamificação</a></li>
-                            <li><a href='#democratizacao'>Democratização da Educação</a></li>
-                            <li><a href='#knowtoken'>KnowToken</a></li>  
+                            <li><a href='#democratizacao'>Democratização</a></li>
+                            <li><a href='#knowtoken'>KnowToken</a></li> 
+                            <li><a href='#cursos'>Cursos</a></li> 
                         </ul>                  
                     </div>
                 </Col>          

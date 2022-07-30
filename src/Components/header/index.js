@@ -28,7 +28,7 @@ export default function Header()
                 <Container>
                     <Navbar.Brand href="/">
                         <img className="logo d-inline-block align-top" src='Logoamarelo.png' alt='Logo-amarelo'/>
-                        {" "}Yknow
+                        {" "}Uknow
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -39,8 +39,9 @@ export default function Header()
                             <Nav.Link href="#gamificacao">Gamificação</Nav.Link>
                             <Nav.Link href="#democratizacao">A Democratização</Nav.Link>
                             <Nav.Link href="#knowtoken">KnowToken</Nav.Link>
+                            <Nav.Link href="#cursos">Cursos</Nav.Link>
                         </Nav>
-                        <Button type="button" variant="warning">Sign in</Button>
+                        <Button href="/login" variant="warning">Login</Button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

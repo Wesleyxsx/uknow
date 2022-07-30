@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 
 //----------- Custom Style Import ---------
+import Cursos from "../cursos";
 import './index.css';
 import pic01 from './images/harold.jpg';
 import pic02 from './images/lalmano.png';
@@ -134,7 +135,16 @@ export default function Main()
         </Container>        
         <br />        
         <br />        
-      </section>           
+      </section>
+      <section id="cursos" className='fifth__section'>
+        <br />
+        <br />
+        <Container>
+          <Cursos />
+        </Container>      
+        <br />        
+        <br />        
+      </section>        
     </main>
   );
 }//end Main()
