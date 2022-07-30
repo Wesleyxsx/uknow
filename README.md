@@ -1,6 +1,6 @@
 # UKnow
 
-UKnow é uma plataforma de E-Learning 
+UKnow é uma plataforma de E-Learning com gamificação que explora o apredizado do aluno através de recompensa pelo ganhos de moedas KnowToken. 
 
 ## Sumário
 
@@ -9,6 +9,7 @@ UKnow é uma plataforma de E-Learning
     1. [Requisitos Funcionais](#requisitos-funcionais)
     2. [Requisitos Não-Funcionais](#requisitos-não-funcionais)
 3. [Arquitetura do Projeto](#arquitetura-do-projeto)
+4. [Modelagem do Banco de Dados]
 
 ## Branches
 
@@ -16,12 +17,11 @@ A estrutura de branches do projeto está organizada da seguinte forma:
 
 - [master](https://github.com/rithienatan/uknow/tree/master): Descrições e documentações do projeto.
 - [frontend-indev](https://github.com/rithienatan/uknow/tree/frontend-indev): Repositório para o projeto webapp em React que está em desenvolvimento.
-- [frontend-deployed](https://github.com/rithienatan/uknow/tree/frontend-deployed): Web app estático em produção.
+- [frontend-deployed](https://github.com/rithienatan/uknow/tree/frontend-deployed): Webapp estático em produção.
 - [backend-api-indev](https://github.com/rithienatan/uknow/tree/backend-api-indev): Repositório para o projeto Web API em Express que está em desenvolvimento.
 - [backend-api-deployed](https://github.com/rithienatan/uknow/tree/backend-api-deployed): Web API em produção.
 
 ## Levantamento de Requisitos
-
 
 ### Requisitos Funcionais
 
@@ -36,23 +36,7 @@ A estrutura de branches do projeto está organizada da seguinte forma:
     </tr>
     <tr>
         <td>#02</td>
-        <td>Cadastro de Professores.</td>
-    </tr>
-    <tr>
-        <td>#03</td>
-        <td>As carteiras devem ser criadas após o cadastro de Alunos e Professores.</td>
-    </tr>
-    <tr>
-        <td>#04</td>
-        <td>Professores podem criar cursos.</td>
-    </tr>
-    <tr>
-        <td>#05</td>
-        <td>Alunos e professores podem comprar cursos.</td>
-    </tr>
-    <tr>
-        <td>#065</td>
-        <td>Alunos e professores podem escolher qual o método de pagamento para a compra de cursos.</td>
+        <td>As carteiras devem ser criadas após o cadastro de Alunos.</td>
     </tr>
 </table>
 
@@ -84,3 +68,6 @@ A estrutura de branches do projeto está organizada da seguinte forma:
 ## Arquitetura do Projeto
 
 ![Project Architecture](UKnow-Architecture.png)
+
+## Modelagem do Banco de Dados
+![DB Model](Database-Diagram.png)
