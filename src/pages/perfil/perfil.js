@@ -1,6 +1,5 @@
 //---------- Import libs ---------
-import axios from "axios";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 
 //--------- Import custom components ---------
