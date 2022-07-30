@@ -1,6 +1,6 @@
 {
   "name": "uknow",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",

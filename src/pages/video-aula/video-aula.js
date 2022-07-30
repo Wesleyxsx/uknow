@@ -72,7 +72,7 @@ export default function Videopage()
             <main className='pageaula'>
                 <div className='aula'>
                     <div className='tela'>
-                        <iframe width="50%" height="443" src="https://www.youtube.com/embed/8QvChwfThZo" />
+                        <iframe width="100%" height="800" src="https://www.youtube.com/embed/8QvChwfThZo" />
                     </div>
                 </div>
                 <div className='material'>
