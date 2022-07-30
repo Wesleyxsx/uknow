@@ -63,6 +63,10 @@ A estrutura de branches do projeto está organizada da seguinte forma:
         <td>#04</td>
         <td>Firebase - Hosting, Functions e Firestore Database (NoSQL)</td>
     </tr>
+    <tr>
+        <td>#05</td>
+        <td>Controle de Versão - Github e Semantic Versioning</td>
+    </tr>
 </table>
 
 ## Arquitetura do Projeto
